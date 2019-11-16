@@ -38,7 +38,6 @@ def hit?
   elsif choice == "s"
     end_game
   else
-    invalid_command
   end
 end
 
