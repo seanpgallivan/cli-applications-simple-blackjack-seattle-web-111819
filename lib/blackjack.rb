@@ -31,7 +31,7 @@ def hit?
   choice = ""
   prompt_user
   until choice != "h" || choice != "s"
-    choice = get_user_input 
+    choice = get_user_input
     if choice != "h" || choice != "s"
       invalid_command
     end
