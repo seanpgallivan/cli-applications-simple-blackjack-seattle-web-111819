@@ -48,10 +48,6 @@ def hit?(card_total)
   card_total
 end
 
-#####################################################
-# get every test to pass before coding runner below #
-#####################################################
-
 def runner
   hand = 0
   welcome
@@ -62,4 +58,3 @@ def runner
   end
   end_game(hand)
 end
-    
