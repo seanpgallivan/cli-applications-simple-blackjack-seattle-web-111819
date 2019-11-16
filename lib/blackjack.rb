@@ -7,7 +7,7 @@ def deal_card
 end
 
 def display_card_total(card_total)
-  # code #display_card_total here
+  puts "Your cards add up to #{card_total}."
 end
 
 def prompt_user
@@ -27,11 +27,14 @@ def initial_round
 end
 
 def hit?
+  hand = 11
+  choice = ""
   prompt_user
-  choice = get_user_input
-  if choice == "h"
+  until choice !== "h" || "s"
+    choice = get_user_input 
+    if choice !== "h" || "s"
     deal_card
-    display_card_total()
+    display_card_total(hand)
   elsif choice == "s"
     end_game
   else
