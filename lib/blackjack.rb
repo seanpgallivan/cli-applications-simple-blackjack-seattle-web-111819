@@ -31,7 +31,6 @@ def initial_round
 end
 
 def hit?(card_total)
-  choice = ""
   prompt_user
   choice = get_user_input
   until choice == "h" || choice == "s"
