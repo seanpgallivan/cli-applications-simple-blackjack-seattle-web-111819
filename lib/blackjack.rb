@@ -28,8 +28,12 @@ end
 
 def hit?
   prompt_user
-  get_user_input
-  
+  choice = get_user_input
+  if choice == "h"
+    deal_card
+    display_card_total()
+  elsif choice == "s"
+    
 end
 
 def invalid_command
