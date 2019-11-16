@@ -33,11 +33,14 @@ def hit?
   until choice !== "h" || "s"
     choice = get_user_input 
     if choice !== "h" || "s"
+      invalid_command
+    end
+  end
+  if choice = "h"
     deal_card
     display_card_total(hand)
-  elsif choice == "s"
-    end_game
   else
+    end_game
   end
 end
 
