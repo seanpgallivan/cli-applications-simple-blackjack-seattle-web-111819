@@ -33,7 +33,10 @@ def hit?
     deal_card
     display_card_total()
   elsif choice == "s"
-    
+    end_game
+  else
+    invalid_command
+  end
 end
 
 def invalid_command
