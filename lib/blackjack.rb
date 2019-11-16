@@ -36,12 +36,10 @@ def hit?(card_total)
     end
   end
   if choice = "h"
-    hand = card_total + deal_card
-    display_card_total(hand)
-  else
-    end_game
+    card_total += deal_card
   end
-  hand
+  display_card_total(card_total)
+  card_total
 end
 
 def invalid_command
