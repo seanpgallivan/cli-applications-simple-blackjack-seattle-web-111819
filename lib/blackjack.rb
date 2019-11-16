@@ -27,7 +27,6 @@ def initial_round
 end
 
 def hit?(card_total)
-  hand = 11
   choice = ""
   prompt_user
   until choice != "h" || choice != "s"
@@ -37,11 +36,12 @@ def hit?(card_total)
     end
   end
   if choice = "h"
-    deal_card
+    hand = card_total + deal_card
     display_card_total(hand)
   else
     end_game
   end
+  hand
 end
 
 def invalid_command
