@@ -31,11 +31,10 @@ end
 def hit?(card_total)
   choice = ""
   prompt_user
-  until choice != "h" || choice != "s"
+  choice = get_user_input
+  until choice = "h" || choice = "s"
+    invalid_command
     choice = get_user_input
-    if choice != "h" || choice != "s"
-      invalid_command
-    end
   end
   if choice = "h"
     card_total += deal_card
