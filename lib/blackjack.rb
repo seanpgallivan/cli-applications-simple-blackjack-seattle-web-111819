@@ -34,7 +34,6 @@ def hit?(card_total)
   choice = ""
   prompt_user
   choice = get_user_input
-  binding.pry
   until choice = "h" || choice = "s"
     invalid_command
     choice = get_user_input
