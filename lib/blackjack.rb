@@ -23,15 +23,17 @@ def end_game
 end
 
 def initial_round
-  # code #initial_round here
+  display_card_total(deal_card + deal_card)
 end
 
 def hit?
-  # code hit? here
+  prompt_user
+  get_user_input
+  
 end
 
 def invalid_command
-  # code invalid_command here
+  puts "Please enter a valid command"
 end
 
 #####################################################
