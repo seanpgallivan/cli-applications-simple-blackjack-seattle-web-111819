@@ -25,9 +25,9 @@ def end_game(card_total)
 end
 
 def initial_round
-  hand = deal_card + deal_card
-  display_card_total(hand)
-  hand
+  card_total = deal_card + deal_card
+  display_card_total(card_total)
+  card_total
 end
 
 def hit?(card_total)
@@ -53,6 +53,9 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  hand = 0
+  welcome
+  hand = initial_round
+  hit?(hand)
 end
     
