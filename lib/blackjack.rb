@@ -30,9 +30,9 @@ def hit?
   hand = 11
   choice = ""
   prompt_user
-  until choice != "h" || choice !="s"
+  until choice != "h" || choice != "s"
     choice = get_user_input 
-    if choice != "h" || "s"
+    if choice != "h" || choice != "s"
       invalid_command
     end
   end
